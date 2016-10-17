@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Profile</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+<div>
+			<h1> User Profile </h1>
+			<h2>Below is your information..</h2>
+			<img src= "images/profile.jpg" alt= "Profile Pic"/>
+					<br>
+             
+							<input id="upload" type="file"/>
+							<a href="" id="upload_link"></a>
+							<p> Upload new photo</p>
+							<script>
+							$(function(){
+								$("#upload_link").on('click', function(e){
+								e.preventDefault();
+								$("#upload:hidden").trigger('click');
+									});
+									});
+							</script>
+				<br>
+
+
+		</hr>
+<form action="/form.php" method="post">
+   
+    <div>
+      <label for ="FirstName">First Name</label>   		
+      <input type="text" id="FistName" placeholder="First Name" required="required" ><br>
+    </div>
+   
+    <div>
+      <label for ="LastName">Last Name</label> 
+	    <input type="text" id="LastName" placeholder="Last Name"  required="required" ><br>
+    </div>
+   
+    <div>
+	    <label for ="UserName">User Name</label> 
+  	  <input type="UserName"  id="UserName" placeholder="Username"required="required"><br>
+    </div>
+    
+    <div>
+      <label for ="Email">Email</label> 
+	    <input type="text"  id="email"placeholder="example@yahoo.com"required="required" ><br>
+    </div>
+    
+    <div>
+      <label for ="Password">Password</label> 
+		  <input type="password"  id="password"placeholder="********" required="required" ><br>
+    </div>
+    
+    <div>
+      <label for ="Birthdate">Birthdate</label> 
+	    <input type="date"  id="birthdate"placeholder="*/**/****" required="required"><br>
+    </div>
+    
+    <div>
+      <label for ="Gender">Gender</label>
+      <br>
+		  <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+    </div>
+    
+   </form>
+		</hr>
+
+		<input type="button" onclick="location.href='profile.html';" value="Submit" />
+				<br>
+				</div>
+
+
+		<div id="footer">Copyright &copy; Victor Carlos Cornejo<br>
+			vcc3@njit.edu
+			phone: 973-570-9574
+		</div>
+
+</body>
+</html>
