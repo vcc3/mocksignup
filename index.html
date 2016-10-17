@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Sign Up</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+          <h1>User Sign up Page</h1>
+
+
+
+<p>Hello and Welcome to ******.com. Please fill out the fields below to start creating your user account and sign in.</p>
+<br>
+<form action="/form.php" method="post">
+<fieldset><legend>Current Needed Information</legend>
+
+<form action="/form.php" method="post">
+   
+    <div>
+      <label for ="FirstName">First Name</label>   		
+      <input type="text" id="FistName" placeholder="First Name" required="required" ><br>
+    </div>
+   
+    <div>
+      <label for ="LastName">Last Name</label> 
+	    <input type="text" id="LastName" placeholder="Last Name"  required="required" ><br>
+    </div>
+   
+    <div>
+	    <label for ="UserName">User Name</label> 
+  	  <input type="UserName"  id="UserName" placeholder="Username"required="required"><br>
+    </div>
+    
+    <div>
+      <label for ="Email">Email</label> 
+	    <input type="text"  id="email"placeholder="example@yahoo.com"required="required" ><br>
+    </div>
+    
+    <div>
+      <label for ="Password">Password</label> 
+		  <input type="password"  id="password"placeholder="********" required="required" ><br>
+    </div>
+    
+    <div>
+      <label for ="Birthdate">Birthdate</label> 
+	    <input type="date"  id="birthdate"placeholder="*/**/****" required="required"><br>
+    </div>
+    
+    <div>
+      <label for ="Gender">Gender</label> 
+      <br>
+		  <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+    </div>
+    
+   <input type="button" onclick="location.href='email.html';" value="Submit" />
+
+</fieldset>
+
+
+</form>
+
+
+
+
+<div id="footer">Copyright &copy; Victor Carlos Cornejo<br>
+vcc3@njit.edu
+phone: 973-570-9574
+</div>
+</body>
+</html>
